@@ -12,4 +12,3 @@ pip install -e ".[dev]"
 pytest -q
 ```
 
-Local tests validate deduplication and aggregation semantics. Kafka/Spark/Airflow/AWS end-to-end execution requires those services/credentials. No throughput claims are made without benchmarks.
