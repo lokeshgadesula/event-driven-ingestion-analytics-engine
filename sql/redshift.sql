@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS analytics.event_hourly(bucket_start TIMESTAMP NOT NULL,event_type VARCHAR(100) NOT NULL,event_count BIGINT NOT NULL,value_sum DECIMAL(18,2) NOT NULL) DISTKEY(event_type) SORTKEY(bucket_start);
